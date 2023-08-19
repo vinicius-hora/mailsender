@@ -1,0 +1,10 @@
+spring:
+  flyway:
+    enabled: false
+    baseline-on-migrate: false
+    locations: classpath:db/migration
+    check-location: true
+    baseline-version: 1
+    sql-migration-prefix: V
+    sql-migration-separator: __
+    sql-migration-sufix: .sql

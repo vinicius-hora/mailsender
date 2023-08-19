@@ -1,0 +1,27 @@
+server:
+  port: 4102
+spring:
+  profiles:
+    active: ${PROFILE:dev}
+
+---
+#VARIABLES
+#mail microsfot
+microsft.enable: ${MICROSOFT_ENABLE:true}
+microsoft.usermail: ${MICROSFT_MAIL:}
+microsoft.password:  ${MICROSFT_PASSWORD:}
+microsoft.mail.host: smtp.office365.com
+microsoft.mail.port: 587
+microsoft.mail.smtp.auth: true
+microsoft.mail.smtp.starttls.enable: true
+microsoft.mail.smtp.socketFactory.fallback: false
+
+#mail google
+google.enable: ${GOOGLE_ENABLE:true}
+google.usermail: ${GOOGLE_MAIL:}
+google.password:  ${GOOGLE_PASSWORD:}
+google.mail.host: smtp.gmail.com
+google.mail.port: 587
+google.mail.smtp.auth: true
+google.mail.smtp.starttls.enable: true
+google.mail.smtp.socketFactory.fallback: false
