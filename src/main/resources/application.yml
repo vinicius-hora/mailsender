@@ -12,8 +12,8 @@ microsoft.usermail: ${MICROSFT_MAIL:}
 microsoft.password:  ${MICROSFT_PASSWORD:}
 microsoft.mail.host: smtp.office365.com
 microsoft.mail.port: 587
-microsoft.mail.smtp.auth: true
-microsoft.mail.smtp.starttls.enable: true
+microsoft.mail.auth: true
+microsoft.mail.starttls: true
 microsoft.mail.smtp.socketFactory.fallback: false
 
 #mail google
@@ -22,6 +22,6 @@ google.usermail: ${GOOGLE_MAIL:}
 google.password:  ${GOOGLE_PASSWORD:}
 google.mail.host: smtp.gmail.com
 google.mail.port: 587
-google.mail.smtp.auth: true
-google.mail.smtp.starttls.enable: true
-google.mail.smtp.socketFactory.fallback: false
+google.mail.auth: true
+google.mail.starttls: true
+google.mail.socketFactory: javax.net.ssl.SSLSocketFactory
